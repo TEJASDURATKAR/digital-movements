@@ -1,0 +1,155 @@
+/* ================= HERO SECTION ================= */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1ebf73, #0f766e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8fff9; /* soft ivory instead of pure white */
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Soft glowing overlay */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.28),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+/* Container */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content */
+.hero-content {
+  max-width: 800px;
+  animation: fadeUp 0.9s ease forwards;
+  position: relative;
+  z-index: 1;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  margin-bottom: 22px;
+  backdrop-filter: blur(10px);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* Heading */
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #f8fff9;
+}
+
+/* Highlight words */
+.hero h1 span {
+  background: linear-gradient(90deg, #ffe8a3, #ffd166);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph */
+.hero p {
+  font-size: 1.15rem;
+  margin: 26px 0 36px;
+  line-height: 1.7;
+  color: #eafff3; /* soft mint white */
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 14px 34px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+/* Primary Button */
+.hero-btn.primary {
+  background: #ffffff;
+  color: #0f766e;
+}
+
+.hero-btn.primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(15, 118, 110, 0.45);
+}
+
+/* WhatsApp Button */
+.hero-btn.whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #ffffff;
+}
+
+.hero-btn.whatsapp:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+/* Trust Text */
+.hero-trust {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(45px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    gap: 14px;
+  }
+}

@@ -1,0 +1,99 @@
+.whatsapp-cta {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow overlay */
+.whatsapp-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(255, 255, 255, 0.18),
+    transparent 60%
+  );
+  pointer-events: none;
+}
+
+.cta-content {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Badge */
+.cta-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.whatsapp-cta h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.whatsapp-cta h2 span {
+  color: #eafff3;
+}
+
+/* Text */
+.whatsapp-cta p {
+  font-size: 1.05rem;
+  opacity: 0.95;
+  margin-bottom: 35px;
+}
+
+/* Button */
+.cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #128c7e;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.35s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  color: #128c7e;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .whatsapp-cta h2 {
+    font-size: 2rem;
+  }
+
+  .whatsapp-cta p {
+    font-size: 1rem;
+  }
+}

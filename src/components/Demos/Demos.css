@@ -1,0 +1,53 @@
+.demos {
+  padding: 90px 20px;
+  background: #f9f9f9;
+}
+
+.demos-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.demos-header h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.demos-header p {
+  color: #666;
+}
+
+/* Card */
+.demo-card {
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.demo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.demo-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.demo-card h5 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.demo-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .demo-card img {
+    height: 180px;
+  }
+}

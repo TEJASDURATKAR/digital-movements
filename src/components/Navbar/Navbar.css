@@ -1,0 +1,122 @@
+/* ================= ROOT BRAND COLORS ================= */
+:root {
+  --brand-primary: #25d366;
+  --brand-dark: #128c7e;
+  --nav-dark-1: #0b1f1a;
+  --nav-dark-2: #071914;
+}
+
+/* ================= NAVBAR BASE ================= */
+.main-navbar {
+  background: linear-gradient(
+    135deg,
+    rgba(11, 31, 26, 0.85),
+    rgba(7, 25, 20, 0.85)
+  );
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.35s ease;
+  padding: 14px 0;
+  z-index: 999;
+}
+
+/* ================= SCROLL EFFECT ================= */
+.main-navbar.scrolled {
+  background: linear-gradient(
+    135deg,
+    rgba(7, 25, 20, 0.95),
+    rgba(11, 31, 26, 0.95)
+  );
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+  padding: 10px 0;
+}
+
+/* ================= BRAND ================= */
+.brand {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff !important;
+  letter-spacing: 0.5px;
+}
+
+.brand span {
+  color: var(--brand-primary);
+}
+
+/* ================= NAV LINKS ================= */
+.nav-links .nav-link {
+  color: #eafff3 !important;
+  margin: 0 12px;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Hover underline */
+.nav-links .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--brand-primary),
+    var(--brand-dark)
+  );
+  transition: width 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+  color: #ffffff !important;
+}
+
+.nav-links .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ================= WHATSAPP BUTTON ================= */
+.whatsapp-btn {
+  margin-left: 20px;
+  background: linear-gradient(
+    135deg,
+    var(--brand-primary),
+    var(--brand-dark)
+  );
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(37, 211, 102, 0.45);
+}
+
+/* ================= MOBILE MENU ================= */
+@media (max-width: 991px) {
+  .nav-links {
+    background: linear-gradient(
+      135deg,
+      rgba(7, 25, 20, 0.95),
+      rgba(11, 31, 26, 0.95)
+    );
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .nav-links .nav-link {
+    margin: 12px 0;
+  }
+
+  .whatsapp-btn {
+    margin: 16px 0 0;
+    width: 100%;
+  }
+}

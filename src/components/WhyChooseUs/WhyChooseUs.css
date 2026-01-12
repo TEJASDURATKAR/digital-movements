@@ -1,0 +1,80 @@
+.why {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #fff5f7, #fff);
+}
+
+.why-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.why-header h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+.why-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Cards */
+.why-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+
+  cursor: pointer;
+  transition: all 0.35s ease;
+
+  /* entrance animation */
+  animation: fadeUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.why-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon */
+.why-icon {
+  font-size: 2.2rem;
+  display: inline-block;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover .why-icon {
+  transform: rotate(8deg) scale(1.15);
+}
+
+.why-card h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why {
+    padding: 60px 0;
+  }
+
+  .why-header h2 {
+    font-size: 1.9rem;
+  }
+}
