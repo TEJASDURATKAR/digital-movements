@@ -43,16 +43,18 @@ export default function Demos() {
                   <h5>{demo.title}</h5>
 
                   <div className="demo-actions">
+                    {/* View Demo */}
                     <Button
-                      variant="outline-success"
+                      className="demo-btn secondary"
                       href={demo.link}
                       target="_blank"
                     >
                       View Demo
                     </Button>
 
+                    {/* Order Now */}
                     <Button
-                      variant="success"
+                      className="demo-btn primary"
                       href={getWhatsAppURL(
                         `I liked the ${demo.title} demo. I want something similar.`
                       )}

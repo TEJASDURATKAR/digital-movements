@@ -31,16 +31,17 @@ export default function Footer() {
             <h5>Contact</h5>
             <p>📱 WhatsApp Support</p>
 
-            <a
-              className="price-btn"
-              href={getWhatsAppURL(
-                "Hi! I want to create a surprise website. Please share details."
-              )}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Chat on WhatsApp
-            </a>
+<a
+  className="whatsapp-link"
+  href={getWhatsAppURL(
+    "Hi! I want to create a surprise website. Please share details."
+  )}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Chat on WhatsApp
+</a>
+
           </Col>
         </Row>
 

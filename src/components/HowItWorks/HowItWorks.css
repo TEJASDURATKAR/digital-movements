@@ -1,77 +1,92 @@
+/* ================= HOW IT WORKS ================= */
+
 .how {
-  padding: 90px 20px;
-  background: #ffffff;
+  padding: 95px 20px;
+  background: linear-gradient(135deg, #fff1f2, #fdecef);
+  position: relative;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Header */
 .how-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 .how-header h2 {
-  font-size: 2.6rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.7rem;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: #3b0a14;
+  text-shadow: 0 6px 20px rgba(255, 120, 150, 0.25);
 }
 
 .how-header p {
-  color: #666;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  color: #6b1e2d;
+  max-width: 620px;
+  margin: auto;
 }
 
 /* Card */
 .how-card {
-  background: #f9f9f9;
-  border-radius: 18px;
-  padding: 40px 20px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 42px 22px;
   text-align: center;
   height: 100%;
-  transition: all 0.3s ease;
+  box-shadow: 0 12px 30px rgba(255, 160, 170, 0.25);
+  transition: all 0.35s ease;
 }
 
 .how-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transform: translateY(-12px);
+  box-shadow: 0 22px 55px rgba(255, 95, 138, 0.45);
 }
 
 /* Step Circle */
 .step-circle {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
+  width: 62px;
+  height: 62px;
+  margin: 0 auto 22px;
   border-radius: 50%;
-  background: #25d366;
-  color: #fff;
+  background: linear-gradient(135deg, #ff5f8a, #ff9a9e);
+  color: #ffffff;
   font-size: 1.5rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 10px 25px rgba(255, 95, 138, 0.5);
 }
 
 /* Text */
 .how-card h5 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: #3b0a14;
 }
 
 .how-card p {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #6b1e2d;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .how {
-    padding: 70px 15px;
+    padding: 70px 16px;
   }
 
   .how-header h2 {
-    font-size: 2.1rem;
+    font-size: 2.15rem;
   }
 
   .how-card {
-    padding: 30px 15px;
+    padding: 32px 18px;
   }
 }

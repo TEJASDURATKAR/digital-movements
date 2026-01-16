@@ -17,12 +17,17 @@ export default function MainNavbar() {
     <Navbar
       expand="lg"
       fixed="top"
-      expanded={expanded}              // 👈 controlled
+      expanded={expanded} // 👈 controlled
       className={`main-navbar ${scrolled ? "scrolled" : ""}`}
     >
       <Container>
         {/* Brand */}
         <Navbar.Brand href="#home" className="brand">
+          <img
+            src="/logo3.png"
+            alt="Digital Moments Logo"
+            className="navbar-logo"
+          />
           Digital <span>Moments</span> ❤️
         </Navbar.Brand>
 

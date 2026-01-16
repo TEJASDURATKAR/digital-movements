@@ -1,17 +1,20 @@
 /* ================= ROOT BRAND COLORS ================= */
 :root {
-  --brand-primary: #25d366;
+  --brand-primary: #25d366; /* WhatsApp green */
   --brand-dark: #128c7e;
-  --nav-dark-1: #0b1f1a;
-  --nav-dark-2: #071914;
+
+  /* Pink theme */
+  --pink-1: #ff7aa2;
+  --pink-2: #ffb3c7;
+  --pink-dark: #b0123a;
 }
 
 /* ================= NAVBAR BASE ================= */
 .main-navbar {
   background: linear-gradient(
     135deg,
-    rgba(11, 31, 26, 0.85),
-    rgba(7, 25, 20, 0.85)
+    rgba(255, 122, 162, 0.85),
+    rgba(255, 179, 199, 0.85)
   );
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
@@ -24,10 +27,10 @@
 .main-navbar.scrolled {
   background: linear-gradient(
     135deg,
-    rgba(7, 25, 20, 0.95),
-    rgba(11, 31, 26, 0.95)
+    rgba(255, 122, 162, 0.95),
+    rgba(255, 179, 199, 0.95)
   );
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 14px 40px rgba(255, 120, 150, 0.45);
   padding: 10px 0;
 }
 
@@ -35,17 +38,17 @@
 .brand {
   font-size: 1.6rem;
   font-weight: 800;
-  color: #ffffff !important;
+  color: #3b0a14 !important;
   letter-spacing: 0.5px;
 }
 
 .brand span {
-  color: var(--brand-primary);
+  color: var(--pink-dark);
 }
 
 /* ================= NAV LINKS ================= */
 .nav-links .nav-link {
-  color: #eafff3 !important;
+  color: #3b0a14 !important;
   margin: 0 12px;
   font-weight: 500;
   position: relative;
@@ -62,21 +65,21 @@
   height: 2px;
   background: linear-gradient(
     90deg,
-    var(--brand-primary),
-    var(--brand-dark)
+    var(--pink-1),
+    var(--pink-dark)
   );
   transition: width 0.3s ease;
 }
 
 .nav-links .nav-link:hover {
-  color: #ffffff !important;
+  color: #000 !important;
 }
 
 .nav-links .nav-link:hover::after {
   width: 100%;
 }
 
-/* ================= WHATSAPP BUTTON ================= */
+/* ================= WHATSAPP BUTTON (GREEN ONLY) ================= */
 .whatsapp-btn {
   margin-left: 20px;
   background: linear-gradient(
@@ -96,19 +99,48 @@
   transform: translateY(-3px);
   box-shadow: 0 14px 35px rgba(37, 211, 102, 0.45);
 }
+/* Logo */
+.navbar-logo {
+  height: 42px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+/* Brand text */
+.brand-text {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.brand-text span {
+  color: #eafff3;
+}
+
+/* Mobile logo size */
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 36px;
+  }
+}
+
 
 /* ================= MOBILE MENU ================= */
 @media (max-width: 991px) {
   .nav-links {
     background: linear-gradient(
       135deg,
-      rgba(7, 25, 20, 0.95),
-      rgba(11, 31, 26, 0.95)
+      rgba(255, 122, 162, 0.95),
+      rgba(255, 179, 199, 0.95)
     );
     border-radius: 20px;
     padding: 20px;
     margin-top: 15px;
     text-align: center;
+    box-shadow: 0 20px 40px rgba(255, 120, 150, 0.35);
   }
 
   .nav-links .nav-link {
