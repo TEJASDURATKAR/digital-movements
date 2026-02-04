@@ -7,22 +7,22 @@ export default function Demos() {
     {
       title: "Birthday Surprise Website",
       img: "https://images.pexels.com/photos/27177969/pexels-photo-27177969.jpeg",
-      link: "https://friend-raj.vercel.app/",
+      link: "https://birthday-surprise-three-alpha.vercel.app/",
     },
     {
       title: "Love / Couple Website",
       img: "https://images.pexels.com/photos/4044169/pexels-photo-4044169.jpeg",
-      link: "https://your-demo-link-2.com",
+      link: "https://love-demo-pi.vercel.app/",
     },
     {
       title: "Proposal Page",
       img: "https://images.pexels.com/photos/11643622/pexels-photo-11643622.jpeg",
-      link: "https://your-demo-link-3.com",
+      link: "https://demo-proposal.vercel.app/",
     },
     {
       title: "Wedding Invitation",
       img: "https://images.pexels.com/photos/30232952/pexels-photo-30232952.jpeg",
-      link: "https://your-demo-link-4.com",
+      link: "https://wedding-invite-gamma-seven.vercel.app/",
     },
   ];
 
